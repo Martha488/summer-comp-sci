@@ -71,9 +71,7 @@ while True:
     cart_total += item_total
     cart.append(f"{size} {drink_choice} with {customization_choice} : ${item_total}")
 
-    again = input("keep ordering? (yes or no): ").lower()
-    if again == "no":
-        break
+    again = input("Keep ordering? (yes or no): ")
         
 print("-----Order Summary-----")
 print(f"{name}")
