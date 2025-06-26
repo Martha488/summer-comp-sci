@@ -30,7 +30,7 @@ cart_total = 0
 cart = []
 
 while True:
-    size = input("please select a size: (grande, venti, trenta): ").lower()
+    size = input("please select a size: (grande, venti, trenta): ")
     if size == "grande":
         size_price = 0.00
     elif size == "venti":
@@ -40,7 +40,7 @@ while True:
     else:
         print("Invalid size. Defaulting to grande")
 
-    drink_choice = input("Please select your drink: ").lower()
+    drink_choice = input("Please select your drink: ")
     if drink_choice == "pink drink":
         drink_price = 5.25
     elif drink_choice == "strawberry acai":
@@ -52,7 +52,7 @@ while True:
         drink_choice = "strawberry acai lemonade"
         drink_price = 5.25
 
-    customization_choice = input("Please choose a customization or press enter to skip: ").lower()
+    customization_choice = input("Please choose a customization or press enter to skip: ")
     if customization_choice == "light ice":
         customization_price = 0
     elif customization_choice == "light lemonade":
